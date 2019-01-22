@@ -440,4 +440,17 @@ a.zocial  {
 
 .login-pf-page .btn-primary {
     margin-top: 0;
+    background: none;
+    background-color: #0f578a;
+}
+
+
+label {
+    color: #0f578a;
+}
+
+.form-control,
+.form-control:hover {
+    border-radius: 2px;
+    border-color: #0f578a;
 }
