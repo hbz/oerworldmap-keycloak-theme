@@ -19,7 +19,7 @@ header .navbar {
 }
 
 .navbar-title {
-    background-image: url('../img/logo.png');
+    /* background-image: url('../img/logo.png'); */
     height: 25px;
     background-repeat: no-repeat;
     width: 123px;
@@ -192,6 +192,34 @@ header .navbar {
 #kc-form-buttons .btn-primary {
     float: right;
     margin-left: 8px;
+    background-image: none;
+    background-color: #0f578a;
+}
+
+#kc-form-buttons .btn-primary:hover {
+    background-color: #ff8000;
+    border-color: #ff8000;
+}
+
+.btn-default {
+    background-image: none;
+    border: 1px solid #1a91e6;
+    color: #1a91e6;
+}
+
+.btn-default:hover {
+    background-color: #1a91e6;
+    color: white;
+}
+
+.form-control,
+.form-control:hover {
+    border-radius: 2px;
+    border-color: #0f578a;
+}
+
+.form-horizontal .control-label {
+    color: #0f578a;
 }
 
 /* Authenticator page */
@@ -274,4 +302,14 @@ hr + .form-horizontal {
     font-size: 16px;
     padding: 10px;
     margin: 50px 0;
+}
+
+
+.navbar {
+    background-color: #0F578A;
+    border: none;
+}
+
+.navbar-pf {
+    border: none;
 }
