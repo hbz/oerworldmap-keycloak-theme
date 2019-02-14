@@ -454,3 +454,19 @@ label {
     border-radius: 2px;
     border-color: #0f578a;
 }
+
+
+.checbkoxGroup {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+.checbkoxGroup input[type=checkbox] {
+    margin-right: 15px;
+}
+
+.asterisk {
+    font-size: 2rem;
+    line-height: 1rem;
+    color: orange;
+}
