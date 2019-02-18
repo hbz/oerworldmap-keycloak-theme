@@ -14,7 +14,7 @@
 
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
 
-        <#--  <#if !realm.registrationEmailAsUsername>
+        <#if !realm.registrationEmailAsUsername>
             <div class="form-group ${messagesPerField.printIfExists('username','has-error')}">
                 <div class="col-sm-2 col-md-2">
                     <label for="username" class="control-label">${msg("username")}</label> <#if realm.editUsernameAllowed><span class="required">*</span></#if>
@@ -24,7 +24,7 @@
                     <input type="text" class="form-control" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
                 </div>
             </div>
-        </#if>  -->
+        </#if>
 
         <div class="form-group ${messagesPerField.printIfExists('email','has-error')}">
             <div class="col-sm-2 col-md-2">
@@ -41,22 +41,22 @@
                 <label for="firstName" class="control-label">${msg("firstName")}</label> <span class="required">*</span>
             </div>
 
-            <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
-            </div>
-        </div>
+            <div class="col-sm-10 col-md-10">  -->
+                <input type="hidden" class="form-control" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
+            <#--  </div>
+        </div>  -->
 
-        <div class="form-group ${messagesPerField.printIfExists('lastName','has-error')}">
+        <#--  <div class="form-group ${messagesPerField.printIfExists('lastName','has-error')}">
             <div class="col-sm-2 col-md-2">
                 <label for="lastName" class="control-label">${msg("lastName")}</label> <span class="required">*</span>
             </div>
 
-            <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
-            </div>
+            <div class="col-sm-10 col-md-10">  -->
+                <input type="hidden" class="form-control" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
+            <#--  </div>
         </div>  -->
 
-        <div class="form-group">
+        <#--  <div class="form-group">
             <div class="col-sm-2 col-md-2">
                 <label for="user.attributes.country" class="control-label">${msg("country")}</label>
             </div>
@@ -64,7 +64,7 @@
             <div class="col-sm-10 col-md-10">
                 <input type="text" class="form-control" id="user.attributes.country" name="user.attributes.country" value="${(account.attributes.country!'')}"/>
             </div>
-        </div>
+        </div>  -->
 
         <div class="form-group">
             <div id="kc-form-buttons" class="col-md-offset-2 col-md-10 submit">
