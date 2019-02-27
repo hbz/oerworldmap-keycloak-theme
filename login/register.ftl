@@ -103,7 +103,7 @@
                 >
                 <label for="user.attributes.privacyAccepted">
                     <span>
-                        By r/egistering, I agree to the terms of the privacy policy. I specifically agree to publish the information I provide, except for my password, which will be stored securely. Your activities within OER World Map will also be stored and processed for the purpose of improving the service as well as to prove your consent to specific activities
+                        ${msg("UserIndex.register.agreePolicy")}
                         <span class="asterisk" title="This is a required field">*</span>
                     </span>
                 </label>
@@ -119,7 +119,7 @@
                 />
                 <label for="user.attributes.termsAccepted">
                     <span>
-                        I also agree to the Terms of the service. Especially, I will ensure, that no rights of others are violated by me publishing information through OER World Map. This includes the privacy and copyrights of others.
+                        ${msg("UserIndex.register.agreeService")}
                         <span class="asterisk" title="This is a required field">*</span>
                     </span>
                 </label>
@@ -133,7 +133,7 @@
                     value="true"
                 />
                 <label for="user.attributes.publishEmail">
-                    I agree to having my email-address published as part of my profile
+                    ${msg("UserIndex.register.agreeEmail")}
                 </label>
             </div>
 
@@ -145,7 +145,7 @@
                     value="true"
                 />
                 <label for="user.attributes.subscribeNewsletter">
-                    I want to subscribe to the OER World Map Newsletter
+                    ${msg("UserIndex.register.subscribe")}
                 </label>
             </div>
 
