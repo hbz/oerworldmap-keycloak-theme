@@ -470,3 +470,8 @@ label {
     line-height: 1rem;
     color: orange;
 }
+
+.login-pf-page .login-pf-page-header {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
