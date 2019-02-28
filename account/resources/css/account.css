@@ -22,10 +22,16 @@ header .navbar {
     /* background-image: url('../img/logo.png'); */
     height: 25px;
     background-repeat: no-repeat;
-    width: 123px;
+    /* width: 123px; */
     margin: 3px 10px 5px;
-    text-indent: -99999px;
+    /* text-indent: -99999px; */
 }
+
+.navbar-title a {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .navbar-pf .navbar-utility {
 	right: 20px;
