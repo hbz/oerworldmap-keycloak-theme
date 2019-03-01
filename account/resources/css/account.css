@@ -6,7 +6,12 @@ body {
     background-color: #F9F9F9;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: calc(100% - 41px);
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 header .navbar {
@@ -16,6 +21,7 @@ header .navbar {
 
 .header .container {
     position: relative;
+    width: 100%;
 }
 
 .navbar-title {
@@ -25,11 +31,15 @@ header .navbar {
     /* width: 123px; */
     margin: 3px 10px 5px;
     /* text-indent: -99999px; */
+    display: flex;
+    align-items: center;
 }
 
 .navbar-title a {
+    font-size: 15px;
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
 }
 
 
@@ -98,8 +108,9 @@ header .navbar {
     border-right: 2px solid #aaa;
 }
 .bs-sidebar ul li.active a {
-    background-color: #c7e5f0;
-    border-color: #56bae0;
+    /* background-color: #c7e5f0; */
+    background-color: #EEEEEE;
+    border-color: #0F578A;
     font-weight: bold;
     background-image: url(../img/icon-sidebar-active.png);
     background-repeat: no-repeat;
@@ -318,4 +329,10 @@ hr + .form-horizontal {
 
 .navbar-pf {
     border: none;
+    border-bottom: 1px solid white;
+
+}
+
+.navbar-pf .navbar-header {
+    border: 0;
 }
