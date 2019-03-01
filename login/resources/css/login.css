@@ -144,8 +144,23 @@ div.kc-logo-text span {
 }
 
 #kc-registration {
+    font-size: 2rem;
     margin-bottom: 15px;
 }
+
+#kc-registration a {
+    background-color: #0F578A;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+#kc-registration a:focus,
+#kc-registration a:hover {
+    background-color:orange;
+    border-color: orange;
+}
+
 
 /* TOTP */
 
@@ -444,6 +459,12 @@ a.zocial  {
     background-color: #0f578a;
 }
 
+.login-pf-page .btn-primary:hover,
+.login-pf-page .btn-primary:focus {
+    background-color: orange;
+    border-color: orange;
+}
+
 
 label {
     color: #0f578a;
@@ -455,6 +476,10 @@ label {
     border-color: #0f578a;
 }
 
+.form-control:focus  {
+    outline: 1px solid orange;
+    box-shadow: none;
+}
 
 .checbkoxGroup {
     display: flex;
