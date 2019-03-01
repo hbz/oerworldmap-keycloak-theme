@@ -45,7 +45,7 @@
                             <li>
                         </#if>
                         <#if referrer?has_content && referrer.url?has_content><li><a href="${referrer.url}" id="referrer">${msg("backTo",referrer.name)}</a></li></#if>
-                        <li><a href="${url.logoutUrl}">${msg("doSignOut")}</a></li>
+                        <#--  <li><a href="${url.logoutUrl}">${msg("doSignOut")}</a></li>  -->
                     </ul>
                 </div>
             </div>
