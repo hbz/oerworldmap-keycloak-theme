@@ -36,6 +36,9 @@
             <link href="${resourcesPath}/${style}" rel="stylesheet" />
         </#list>
     </#if>
+    <script>
+      window.location.href = "/";
+    </script>
 </head>
 
 <body>
@@ -43,12 +46,12 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
       <div class="welcome-header">
-        <img src="${resourcesPath}/logo.png" alt="${productName}" border="0" />
-        <h1>Welcome to <strong>${productNameFull}</strong></h1>
+        <#--  <img src="${resourcesPath}/logo.png" alt="${productName}" border="0" />  -->
+        <#--  <h1>Welcome to <strong>${productNameFull}</strong></h1>  -->
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-4">
-          <div class="card-pf h-l">
+          <#--  <div class="card-pf h-l">
             <#if successMessage?has_content>
                 <p class="alert success">${successMessage}</p>
             <#elseif errorMessage?has_content>
@@ -95,8 +98,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
+        </div>  -->
+        <#--  <div class="col-xs-12 col-sm-4">
           <div class="card-pf h-l">
             <h3><a href="${properties.documentationUrl}"><img class="doc-img" src="welcome-content/admin-console.png">Documentation <i class="fa fa-angle-right link" aria-hidden="true"></i></a></h3>
             <div class="description">
@@ -119,12 +122,12 @@
           </div>
         </#if>
         </div>
-      </div>
-      <div class='footer'>
+      </div>  -->
+      <#--  <div class='footer'>
         <#if properties.displayCommunityLinks = "true">
         <a href="http://www.jboss.org"><img src="welcome-content/jboss_community.png" alt="JBoss and JBoss Community"></a>
         </#if>
-      </div>
+      </div>  -->
     </div>
   </div>
 </div>

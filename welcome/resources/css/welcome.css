@@ -1,5 +1,7 @@
 body {
-	background: #fff url(../bg.png) no-repeat center bottom fixed;
+	/* background: #fff url(../bg.png) no-repeat center bottom fixed; */
+	background: #0F578A;
+	background: url("../img/map-bg.png") no-repeat center center fixed;
 	background-size: cover;
 }
 .welcome-header {
