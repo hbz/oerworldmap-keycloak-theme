@@ -12,7 +12,7 @@ git clone https://github.com/dobladov/oerworldmap-keycloak-theme.git
 
 ## Configuration
 
-To set the welcome page, add `                <welcomeTheme>oerworldmap-keycloak-theme</welcomeTheme>` to `standalone/configuration/standalone.xml`
+To set the welcome page, add `<welcomeTheme>oerworldmap-keycloak-theme</welcomeTheme>` to `standalone/configuration/standalone.xml`
 
 ## Preview
 
