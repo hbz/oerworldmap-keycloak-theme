@@ -105,7 +105,7 @@
                 >
                 <label for="user.attributes.privacyAccepted">
                     <span>
-                        ${msg("UserIndex.register.agreePolicy")}
+                        ${msg("UserIndex.register.agreePolicy")?no_esc}
                         <span class="asterisk" title="This is a required field">*</span>
                     </span>
                 </label>
@@ -121,7 +121,7 @@
                 />
                 <label for="user.attributes.termsAccepted">
                     <span>
-                        ${msg("UserIndex.register.agreeService")}
+                        ${msg("UserIndex.register.agreeService")?no_esc}
                         <span class="asterisk" title="This is a required field">*</span>
                     </span>
                 </label>
