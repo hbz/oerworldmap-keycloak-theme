@@ -4,6 +4,7 @@
     background: url("../img/map-bg.png") no-repeat center center fixed;
     background-size: cover;
     /* padding: 10px; */
+    word-wrap: break-word;
 }
 
 .alert-error {
