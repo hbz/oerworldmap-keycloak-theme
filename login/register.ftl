@@ -17,20 +17,20 @@
             </div>
           </#if>
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('firstName',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
+                <#--  <div class="${properties.kcLabelWrapperClass!}">
                     <label for="firstName" class="${properties.kcLabelClass!}">${msg("firstName")}</label>
-                </div>
+                </div>  -->
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input required type="text" id="firstName" class="${properties.kcInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" />
+                    <input required placeholder="${msg("firstName")}" type="text" id="firstName" class="${properties.kcInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" />
                 </div>
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('lastName',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
+                <#--  <div class="${properties.kcLabelWrapperClass!}">
                     <label for="lastName" class="${properties.kcLabelClass!}">${msg("lastName")}</label>
-                </div>
+                </div>  -->
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input required type="text" id="lastName" class="${properties.kcInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" />
+                    <input required placeholder="${msg("lastName")}" type="text" id="lastName" class="${properties.kcInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" />
                 </div>
             </div>
 
@@ -44,9 +44,9 @@
             </div>  -->
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('country',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
+                <#--  <div class="${properties.kcLabelWrapperClass!}">
                     <label for="user.attributes.country" class="${properties.kcLabelClass!}">${msg("country")}</label>
-                </div>
+                </div>  -->
                 <div class="${properties.kcInputWrapperClass!}">
                     <select
                         required
@@ -65,33 +65,35 @@
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('email',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
+                <#--  <div class="${properties.kcLabelWrapperClass!}">
                     <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label>
-                </div>
+                </div>  -->
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input required type="text" id="email" class="${properties.kcInputClass!}" name="email" value="${(register.formData.email!'')}" />
+                    <input required placeholder="${msg("email")}" type="text" id="email" class="${properties.kcInputClass!}" name="email" value="${(register.formData.email!'')}" />
                 </div>
             </div>
 
             <#if passwordRequired>
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
+                <#--  <div class="${properties.kcLabelWrapperClass!}">
                     <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
-                </div>
+                </div>  -->
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input required type="password" id="password" class="${properties.kcInputClass!}" name="password" />
+                    <input placeholder="${msg("password")}" required type="password" id="password" class="${properties.kcInputClass!}" name="password" />
                 </div>
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password-confirm',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
+                <#--  <div class="${properties.kcLabelWrapperClass!}">
                     <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")}</label>
-                </div>
+                </div>  -->
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input required type="password" id="password-confirm" class="${properties.kcInputClass!}" name="password-confirm" />
+                    <input required placeholder="${msg("passwordConfirm")}" type="password" id="password-confirm" class="${properties.kcInputClass!}" name="password-confirm" />
                 </div>
             </div>
             </#if>
+
+            <br/>
 
             <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
                 <input
