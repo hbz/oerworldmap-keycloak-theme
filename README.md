@@ -16,4 +16,7 @@ To set the welcome page, add `<welcomeTheme>oerworldmap-keycloak-theme</welcomeT
 
 ## Preview
 
-![image](https://user-images.githubusercontent.com/1938043/53876532-45b5c580-4007-11e9-85c2-d0f99910d2e6.png)
+![Screen Shot 2019-03-11 at 10 06 16-fullpage](https://user-images.githubusercontent.com/1938043/54112453-79696480-43e6-11e9-8628-43b56d8f3ca1.png)
+
+![Screenshot_2019-03-11 Log in to oerworldmap](https://user-images.githubusercontent.com/1938043/54112452-78d0ce00-43e6-11e9-977f-923fc1de4586.png)
+
