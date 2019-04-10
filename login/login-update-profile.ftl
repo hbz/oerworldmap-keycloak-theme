@@ -60,7 +60,7 @@
                     </select>
                 </div>
             </div>
-
+<#--
             <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
                 <input
                     required
@@ -91,9 +91,9 @@
                         <span class="asterisk" title="This is a required field">*</span>
                     </span>
                 </label>
-            </div>
+            </div>  -->
 
-            <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('publishEmail',properties.kcFormGroupErrorClass!)}">
+            <#--  <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('publishEmail',properties.kcFormGroupErrorClass!)}">
                 <input
                     type="checkbox"
                     name="user.attributes.publishEmail"
@@ -103,7 +103,7 @@
                 <label for="user.attributes.publishEmail">
                     ${msg("UserIndex.register.agreeEmail")}
                 </label>
-            </div>
+            </div>  -->
 
             <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('subscribeNewsletter',properties.kcFormGroupErrorClass!)}">
                 <input

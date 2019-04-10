@@ -43,10 +43,10 @@
                 </div>
             </div>  -->
 
-            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('country',properties.kcFormGroupErrorClass!)}">
-                <#--  <div class="${properties.kcLabelWrapperClass!}">
+            <#--  <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('country',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcLabelWrapperClass!}">
                     <label for="user.attributes.country" class="${properties.kcLabelClass!}">${msg("country")}</label>
-                </div>  -->
+                </div>
                 <div class="${properties.kcInputWrapperClass!}">
                     <select
                         required
@@ -62,7 +62,7 @@
 
                     </select>
                 </div>
-            </div>
+            </div>  -->
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('email',properties.kcFormGroupErrorClass!)}">
                 <#--  <div class="${properties.kcLabelWrapperClass!}">
@@ -95,7 +95,7 @@
 
             <br/>
 
-            <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
+            <#--  <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
                 <input
                     required
                     type="checkbox"
@@ -125,9 +125,9 @@
                         <span class="asterisk" title="This is a required field">*</span>
                     </span>
                 </label>
-            </div>
+            </div>  -->
 
-            <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('publishEmail',properties.kcFormGroupErrorClass!)}">
+            <#--  <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('publishEmail',properties.kcFormGroupErrorClass!)}">
                 <input
                     type="checkbox"
                     name="user.attributes.publishEmail"
@@ -137,7 +137,7 @@
                 <label for="user.attributes.publishEmail">
                     ${msg("UserIndex.register.agreeEmail")}
                 </label>
-            </div>
+            </div>  -->
 
             <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('subscribeNewsletter',properties.kcFormGroupErrorClass!)}">
                 <input
