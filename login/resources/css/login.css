@@ -485,15 +485,6 @@ label {
     box-shadow: none;
 }
 
-.checbkoxGroup {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-}
-.checbkoxGroup input[type=checkbox] {
-    margin-right: 15px;
-}
-
 .asterisk {
     font-size: 2rem;
     line-height: 1rem;

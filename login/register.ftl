@@ -93,8 +93,6 @@
             </div>
             </#if>
 
-            <br/>
-
             <#--  <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
                 <input
                     required
@@ -139,16 +137,18 @@
                 </label>
             </div>  -->
 
-            <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('subscribeNewsletter',properties.kcFormGroupErrorClass!)}">
-                <input
-                    type="checkbox"
-                    name="user.attributes.subscribeNewsletter"
-                    id="user.attributes.subscribeNewsletter"
-                    value="true"
-                />
-                <label for="user.attributes.subscribeNewsletter">
-                    ${msg("UserIndex.register.subscribe")}
-                </label>
+            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('subscribeNewsletter',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcInputWrapperClass!}">
+                    <input
+                        type="checkbox"
+                        name="user.attributes.subscribeNewsletter"
+                        id="user.attributes.subscribeNewsletter"
+                        value="true"
+                    />
+                    <label for="user.attributes.subscribeNewsletter">
+                        ${msg("UserIndex.register.subscribe")}
+                    </label>
+                </div>
             </div>
 
             <#if recaptchaRequired??>
