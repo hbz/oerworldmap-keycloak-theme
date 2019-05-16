@@ -93,37 +93,37 @@
             </div>
             </#if>
 
-            <#--  <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
-                <input
-                    required
-                    type="checkbox"
-                    name="user.attributes.privacyAccepted"
-                    id="user.attributes.privacyAccepted"
-                    value="true"
-                >
-                <label for="user.attributes.privacyAccepted">
-                    <span>
+            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcInputWrapperClass!}">
+                    <input
+                        required
+                        type="checkbox"
+                        name="user.attributes.privacyAccepted"
+                        id="user.attributes.privacyAccepted"
+                        value="true"
+                    >
+                    <label for="user.attributes.privacyAccepted" style="display: inline">
                         ${msg("UserIndex.register.agreePolicy")?no_esc}
                         <span class="asterisk" title="This is a required field">*</span>
-                    </span>
-                </label>
+                    </label>
+                </div>
             </div>
 
-            <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('termsAccepted',properties.kcFormGroupErrorClass!)}">
-                <input
-                    required
-                    type="checkbox"
-                    name="user.attributes.termsAccepted"
-                    id="user.attributes.termsAccepted"
-                    value="true"
-                />
-                <label for="user.attributes.termsAccepted">
-                    <span>
+            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('termsAccepted',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcInputWrapperClass!}">
+                    <input
+                        required
+                        type="checkbox"
+                        name="user.attributes.termsAccepted"
+                        id="user.attributes.termsAccepted"
+                        value="true"
+                    />
+                    <label for="user.attributes.termsAccepted" style="display: inline">
                         ${msg("UserIndex.register.agreeService")?no_esc}
                         <span class="asterisk" title="This is a required field">*</span>
-                    </span>
-                </label>
-            </div>  -->
+                    </label>
+                </div>
+            </div>
 
             <#--  <div class="${properties.kcFormGroupClass!} checbkoxGroup ${messagesPerField.printIfExists('publishEmail',properties.kcFormGroupErrorClass!)}">
                 <input
