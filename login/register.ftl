@@ -94,7 +94,7 @@
             </#if>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('privacyAccepted',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcInputWrapperClass!}">
+                <div class="${properties.kcInputWrapperClass!} checbkoxGroup">
                     <input
                         required
                         type="checkbox"
@@ -110,7 +110,7 @@
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('termsAccepted',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcInputWrapperClass!}">
+                <div class="${properties.kcInputWrapperClass!} checbkoxGroup">
                     <input
                         required
                         type="checkbox"
@@ -138,7 +138,7 @@
             </div>  -->
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('subscribeNewsletter',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcInputWrapperClass!}">
+                <div class="${properties.kcInputWrapperClass!} checbkoxGroup">
                     <input
                         type="checkbox"
                         name="user.attributes.subscribeNewsletter"
@@ -170,6 +170,6 @@
                     <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doRegister")}"/>
                 </div>
             </div>
-        </form>
+        </form>        
     </#if>
 </@layout.registrationLayout>
