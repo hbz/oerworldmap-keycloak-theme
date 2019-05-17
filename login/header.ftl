@@ -22,7 +22,7 @@
     }
     .simpleHeader a:hover,
     .simpleHeader a:focus {
-        color: orange;
+        color: white;
     }
 
 </style>
