@@ -555,7 +555,7 @@ label {
 }
 
 .checbkoxGroup input[type=checkbox]:focus {
-    outline: 1px dashed #80808099;
+    outline: 1px dotted #80808099;
     outline-offset: 1px;
 }
 

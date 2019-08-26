@@ -63,6 +63,14 @@
         <h1 id="kc-page-title"><#nested "header"></h1>
       </header>
       <div id="kc-content">
+
+        <div class="alert alert-warning">
+            <span class="pficon pficon-warning-triangle-o"></span>
+            <span class="kc-feedback-text">
+                ${msg("Login.updatePasswordWarning")?no_esc}
+            </span>
+        </div>
+
         <div id="kc-content-wrapper">
 
           <#if displayMessage && message?has_content>
