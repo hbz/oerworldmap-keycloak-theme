@@ -67,7 +67,7 @@
         <div class="alert alert-warning">
             <span class="pficon pficon-warning-triangle-o"></span>
             <span class="kc-feedback-text">
-                ${msg("Login.updatePasswordWarning")?no_esc}
+                ${msg("Login.updatePasswordWarning", url.loginResetCredentialsUrl)?no_esc}
             </span>
         </div>
 
