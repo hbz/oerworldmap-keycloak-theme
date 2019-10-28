@@ -8,7 +8,8 @@
 
     <title>OER World Map</title>
     <#--  <title>${msg("accountManagementTitle")}</title>  -->
-    <link rel="icon" href="${url.resourcesPath}/img/favicon.ico">
+    <link rel="shortcut icon" href="${url.resourcesPath}/img/favicon.png" type="image/x-icon" />
+
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
             <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
