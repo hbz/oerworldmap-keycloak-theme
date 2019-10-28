@@ -1,9 +1,10 @@
 .login-pf body {
     /* background: url("../img/keycloak-bg.png") no-repeat center center fixed; */
     background: #0F578A;
-    background: url("../img/map-bg.png") no-repeat center center fixed;
+    /* background: url("../img/map-bg.png") no-repeat center center fixed; */
+    background-image:  url('../img/world.svg');
     background-size: cover;
-    /* padding: 10px; */
+    background-attachment: fixed;
     word-wrap: break-word;
 }
 
@@ -88,6 +89,7 @@ a#kc-current-locale-link {
     font-weight: 400;
     line-height: 21px;
     font-size: 15px;
+    padding-right: 20px;
 }
 
 /* a#kc-current-locale-link:hover {
@@ -95,8 +97,19 @@ a#kc-current-locale-link {
 } */
 
 a#kc-current-locale-link::after {
-    content: "\2c5";
-    margin-left: 4px;
+    /* content: "\2c5"; */
+    /* margin-left: 4px; */
+    display: blocK;
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    content: "";
+    background-image: url('../img/languageBlue.svg');
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 15px 18px;
+    background-position: 0px 2px;
 }
 
 .login-pf .container {
@@ -576,4 +589,28 @@ label {
     z-index: -1;
     background-color: rgba(0,0,0,.55);
     display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #kc-locale {
+        top: 10px;
+    }
+
+    #kc-locale-dropdown a#kc-current-locale-link {
+        color: white;
+    }
+
+    .card-pf {
+        box-shadow: none;
+    }
+
+    #kc-info {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    a#kc-current-locale-link::after {
+        background-image: url('../img/language.svg');
+    }
 }
