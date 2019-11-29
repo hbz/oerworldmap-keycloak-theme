@@ -73,15 +73,23 @@
         <div id="kc-content-wrapper">
 
           <#if displayMessage && message?has_content>
-              <div class="alert alert-${message.type}">
-                  <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
-                  <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
-                  <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
-                  <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
-                  <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
-              </div>
-          </#if>
 
+            <#if (message.summary == msg("verifyEmailMessage"))>
+                <div class="alert alert-success">
+                    <span class="${properties.kcFeedbackSuccessIcon!}"></span>
+                    ${kcSanitize(message.summary)?no_esc}
+                </div>
+            <#else>
+                <div class="alert alert-${message.type}">
+                    <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
+                    <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
+                    <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
+                    <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
+                    <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
+                </div>
+            </#if>
+
+          </#if>
           <#nested "form">
 
           <#if displayInfo>
