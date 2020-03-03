@@ -5,12 +5,6 @@
     <#elseif section = "form">
     <div id="kc-form" <#if realm.password && social.providers??>class="${properties.kcContentWrapperClass!}"</#if>>
       <div id="kc-form-wrapper" <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
-        <div class="alert alert-warning">
-            <span class="pficon pficon-warning-triangle-o"></span>
-            <span class="kc-feedback-text">
-                ${msg("Login.updatePasswordWarning", url.loginResetCredentialsUrl)?no_esc}
-            </span>
-        </div>
 
         <#if realm.password>
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
